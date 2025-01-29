@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
+        
+        body{
+            display: flex;
+            background-color: rgb(118, 150, 255);
+        }
+
+        div{
+            width: 200px;
+            height: 280px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(0, 0, 0);
+            border-radius: 15px;
+        }
+
+        h1{
+            color: rgb(25, 78, 255);
+            margin-top: -80px;
+            margin-left: 10px;
+        }
+
+        nav{
+            flex-grow: 2;
+            background-color: rgb(87, 126, 255);
+            border-radius: 15px;
+            max-width: fit-content;
+        }
+
+        main{
+            flex-grow: 5;
+            margin-left: 50px;
+        }
+
+        article{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        a{
+            all:unset;
+        }
+
+        div img{
+            width: 160px;
+            height: 140px;
+            margin: 5px;  
+        }
+        div.navegador{
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 100px;
+            margin-top: 90px;
+        }
+
+        h6{
+            font-size: larger;
+        }
+
+        h5{
+            font-weight: bold;
+        }
+
+
+        div:hover{
+            background-color: rgba(255, 255, 255, 0.164);
+        }
+
+        .cancion{
+            color: rgb(255, 59, 245);
+            font-family: "Playwrite AU SA", serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        .cantante{
+            text-decoration: underline;
+            color: rgb(255, 102, 247);
+        }
+
+        div.cantante{
+            width: 150px;
+            height: 235px;
+            padding: 35px;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.6);
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        div.cantantes:hover{
+            background-color: blueviolet;
+        }
+
+        .populares{
+            margin: 20px;
+            padding: 20px;
+        }
+
+        button{
+            height: 40px;
+            width: 130px;
+            border-radius: 80px;
+            background-color: blue;
+            font-size: large;
+        }
+
+        p{
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: -80px;
+            margin-left: 10px;
+        }
+
+        button:hover{
+            color: aliceblue;
+        }
+
+        div.partedearriba{
+            background-image: url(aitanaticuno.jpg);
+            width: 100%;
+            background-size: cover;
+
+        }
+        
+        .partedearriba img{
+            height: 280px;
+            width: 100%;
+        }
+
+        .partederriba h1{
+            text-align: left;
+            font-size: 50px;
+            left: 20px;
+            nav-up: 20px;
+        }
+
+        .partedearriba h3{
+            font-size: small;
+            text-align: left;
+        }
+
+        table{
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        td,th{
+            height: 30px;
+            border-radius: 5px;
+        }
+
+
+        tr img{
+            width: 80px;
+            height: 80px;
+        }
+        
+     
+        tr th:nth-last-child(1){
+            max-width: fit-content;
+            text-align: center;
+        }
+    
+        tr th:nth-last-child(2){
+            max-width: fit-content;
+
+        }
+
+        tr th:nth-last-child(3){
+            max-width: fit-content;
+            text-align: left;
+        }
+        tr th:nth-last-child(4){
+            max-width: fit-content;
+            text-align: left;
+            font-weight: bolder;
+        }
+
+        tr th:nth-last-child(5){
+            max-width: fit-content;
+            text-align: left;
+        }
+        .boton{
+            width: 50px;
+            height: 50px;
+        }
+
+       
+    </style>
+    <title>Spotify</title>
+</head>
+<body>
+    <nav>
+        <h3>Tu biblioteca</h3>
+        <div class="navegador">
+            <p> Artista española mejor valorada</p>
+            <h5>Aitana</h5>
+            <a href="artistaaitana.html"><button>Descubre canciones</button></a>
+        </div>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2plbrEY59IikOBgBGLjaoe?utm_source=generator" width="245" height="220" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <div class="navegador">
+            <p> Encuentra canciones que quieras escuchar</p>
+            <h6>Te avisaremos cuando salgan nuevas</h6>
+            <a href="Musicatic 1.html"><button>Explora canciones</button></a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="partedearriba">
+            <img src="aitanaticuno.jpg">
+            
+            <p>12.753.042 oyentes mensuales</p>
+            <h1>Aitana</h1>
+            <p> Artista verificado</p>
+        </div>
+        <table>
+            <h2>Populares</h2>
+            <tr>
+                <td>1</td>
+                <td><img src="granvia.jpg"></td>
+                <td>GRAN VÍA</td>
+                <td>44.580.130</td>
+                <td>3:33</td>
+            </tr>
+            <tr>
+            <td>2</td>
+            <td><img src="monamour.jpg"></td>
+            <td>Mon Amour-Remix</td>
+            <td>754.360.041</td>
+            <td>2:59</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><img src="presiento.jpg"></td>
+                <td>Presiento</td>
+                <td>345.266.823</td>
+                <td>2:54</td> 
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><img src="formentera.jpg"></td>
+                <td>Formentera</td>
+                <td>200.804.182</td>
+                <td>3:27</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td><img src="situlaquieres.jpg"></td>
+                <td>Si Tú La Quieres</td>
+                <td>169.452.195</td>
+                <td>3:44</td>
+            </tr>
+            
+        </table>
+    </main>
+    
+</body>
+</html>
