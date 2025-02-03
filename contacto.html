@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - ViajaConNosotros</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #f4f4f4, #d9e3f0);
+        }
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 100;
+            height: 60px;
+            padding: 15px 20px;
+        }
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: color 0.3s, transform 0.2s;
+        }
+        .nav-links a:hover {
+            color: #f9a825;
+            transform: scale(1.1);
+        }
+
+        .contacto {
+            padding: 100px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .contacto h2 {
+            font-size: 3rem;
+            font-family: 'Pacifico', cursive;
+            background: linear-gradient(90deg, #ff7e5f, #feb47b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+        .form-container button {
+            background-color: #ff7e5f;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 15px;
+            width: 100%;
+        }
+        .form-container button:hover {
+            background-color: #ff6347;
+            transform: scale(1.05);
+        }
+
+        .mapa {
+            margin: 40px auto;
+            max-width: 800px;
+        }
+
+        .btn-regresar {
+            display: block;
+            width: fit-content;
+            margin: 40px auto;
+            background-color: #f9a825;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn-regresar:hover {
+            background-color: #ffb300;
+        }
+
+        footer {
+            background-color: #2a2a2a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo">ViajaConNosotros ✈️</div>
+        <nav class="nav-links">
+            <a href="index 2.html">Inicio</a>
+            <a href="destinos.html">Destinos</a>
+        </nav>
+    </div>
+
+    <section class="contacto">
+        <h2>Contáctanos</h2>
+        <p>Estamos aquí para ayudarte. Envíanos tu consulta y te responderemos lo antes posible.</p>
+        <div class="form-container">
+            <form action="#" method="post">
+                <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                <textarea name="mensaje" rows="5" placeholder="Tu Mensaje" required></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="mapa">
+        <h2 style="text-align: center; font-size: 2rem;">Nuestra Ubicación</h2>
+        <iframe 
+            width="100%" 
+            height="400" 
+            frameborder="0" 
+            style="border:0; display: block; margin: auto; border-radius: 10px;"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30339.7389532887!2d-3.7037907!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229978002b7d5%3A0x3ffac184c8b19a0a!2sMadrid%2C%20Espa%C3%B1a!5e0!3m2!1ses!2ses!4v1706990763150" 
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <a href="index 2.html" class="btn-regresar">Volver al Inicio</a>
+
+    <footer>
+        <p>&copy; 2025 ViajaConNosotros | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!-- Página para solicitar disponibilidad en fechas concretas -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Disponibilidad - ViajaConNosotros</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .btn {
+            padding: 12px;
+            background-color: #ff7e5f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .btn:hover {
+            background-color: #ff6347;
+            transform: scale(1.05);
+        }
+        .message-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+    <script>
+        function enviarFormulario(event) {
+            event.preventDefault();
+            document.getElementById("disponibilidad-form").reset();
+            document.getElementById("message").style.display = "block";
+            setTimeout(() => {
+                document.getElementById("message").style.display = "none";
+            }, 3000);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Solicitar Disponibilidad</h1>
+        <form id="disponibilidad-form" onsubmit="enviarFormulario(event)">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <label>Fecha de llegada:</label>
+            <input type="date" name="fecha-llegada" required>
+            <label>Fecha de salida:</label>
+            <input type="date" name="fecha-salida" required>
+            <button type="submit" class="btn">Enviar solicitud</button>
+        </form>
+        <a href="destinos.html" class="btn" style="display: block; margin-top: 20px;">Volver a Destinos</a>
+    </div>
+    <div id="message" class="message-container">¡Enviado correctamente!</div>
+</body>
+</html>
